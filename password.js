@@ -39,3 +39,8 @@ let filterSymbol = () => {
 }
 
 filter.addEventListener("click",filterSymbol)
+
+let test = characters.join().replace(/[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/g,"").split("")
+console.log(test);
+let test2 = characters.filter(item=>/[0-9a-zA-Z]/g.test(item))
+console.log(test2);
